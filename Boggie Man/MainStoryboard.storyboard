@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Title-->
+        <!--Log In View Controller - Title-->
         <scene sceneID="M2g-nF-1Gz">
             <objects>
-                <viewController id="UpO-pC-Um0" sceneMemberID="viewController">
+                <viewController id="UpO-pC-Um0" customClass="LogInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Czp-MY-KVT"/>
                         <viewControllerLayoutGuide type="bottom" id="BGm-dv-daa"/>
@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="921" y="-408"/>
         </scene>
-        <!--View Controller - Title-->
+        <!--Sign Up View Controller - Title-->
         <scene sceneID="RwH-uv-Db5">
             <objects>
-                <viewController id="Z6N-oq-bey" sceneMemberID="viewController">
+                <viewController id="Z6N-oq-bey" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="51F-Gj-nl3"/>
                         <viewControllerLayoutGuide type="bottom" id="Kis-fs-rpS"/>
@@ -201,6 +201,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signup:" destination="Z6N-oq-bey" eventType="touchUpInside" id="Lih-Pr-cb7"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7g-JJ-1eT">
                                 <rect key="frame" x="20" y="149" width="280" height="30"/>
@@ -212,6 +215,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="uuc-lm-RXP"/>
+                    <connections>
+                        <outlet property="emailField" destination="l7g-JJ-1eT" id="sXj-Oc-pgs"/>
+                        <outlet property="passwordField" destination="XBA-13-mtY" id="Ve8-Ty-B73"/>
+                        <outlet property="usernameField" destination="tUK-Zw-5qF" id="l3Z-Rk-FIm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Vf-ts-wSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

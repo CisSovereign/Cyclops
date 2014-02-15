@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B87166A18B00D9300E20C4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B87166918B00D9300E20C4F /* Parse.framework */; };
+		7B87166D18B00E2D00E20C4F /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87166C18B00E2D00E20C4F /* LogInViewController.m */; };
+		7B87167318B00E9900E20C4F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87167218B00E9900E20C4F /* SignUpViewController.m */; };
 		7B896DD418AF524E00831807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896DD318AF524E00831807 /* Foundation.framework */; };
 		7B896DD618AF524E00831807 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896DD518AF524E00831807 /* CoreGraphics.framework */; };
 		7B896DD818AF524E00831807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896DD718AF524E00831807 /* UIKit.framework */; };
@@ -21,7 +24,6 @@
 		7B896DF918AF524E00831807 /* Boggie_ManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B896DF818AF524E00831807 /* Boggie_ManTests.m */; };
 		7B896E0318AF527600831807 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B896E0218AF527600831807 /* MainStoryboard.storyboard */; };
 		7B896E0B18AF58EB00831807 /* BMInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B896E0A18AF58EB00831807 /* BMInboxViewController.m */; };
-		7B896E0D18AF5EE000831807 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E0C18AF5EE000831807 /* Parse.framework */; };
 		7B896E1718AF5FCD00831807 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E0E18AF5FCD00831807 /* AudioToolbox.framework */; };
 		7B896E1818AF5FCD00831807 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E0F18AF5FCD00831807 /* CFNetwork.framework */; };
 		7B896E1918AF5FCD00831807 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E1018AF5FCD00831807 /* CoreLocation.framework */; };
@@ -44,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B87166918B00D9300E20C4F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7B87166B18B00E2D00E20C4F /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		7B87166C18B00E2D00E20C4F /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		7B87167118B00E9900E20C4F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		7B87167218B00E9900E20C4F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		7B896DD018AF524E00831807 /* Boggie Man.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boggie Man.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B896DD318AF524E00831807 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B896DD518AF524E00831807 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +70,6 @@
 		7B896E0218AF527600831807 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7B896E0918AF58EB00831807 /* BMInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMInboxViewController.h; path = ../BMInboxViewController.h; sourceTree = "<group>"; };
 		7B896E0A18AF58EB00831807 /* BMInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMInboxViewController.m; path = ../BMInboxViewController.m; sourceTree = "<group>"; };
-		7B896E0C18AF5EE000831807 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7B896E0E18AF5FCD00831807 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7B896E0F18AF5FCD00831807 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7B896E1018AF5FCD00831807 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -86,12 +92,12 @@
 				7B896E1A18AF5FCD00831807 /* libz.1.1.3.dylib in Frameworks */,
 				7B896E1B18AF5FCD00831807 /* MobileCoreServices.framework in Frameworks */,
 				7B896E1C18AF5FCD00831807 /* QuartzCore.framework in Frameworks */,
+				7B87166A18B00D9300E20C4F /* Parse.framework in Frameworks */,
 				7B896E1D18AF5FCD00831807 /* Security.framework in Frameworks */,
 				7B896E1E18AF5FCD00831807 /* StoreKit.framework in Frameworks */,
 				7B896E1F18AF5FCD00831807 /* SystemConfiguration.framework in Frameworks */,
 				7B896DD618AF524E00831807 /* CoreGraphics.framework in Frameworks */,
 				7B896DD818AF524E00831807 /* UIKit.framework in Frameworks */,
-				7B896E0D18AF5EE000831807 /* Parse.framework in Frameworks */,
 				7B896DD418AF524E00831807 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +137,7 @@
 		7B896DD218AF524E00831807 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B87166918B00D9300E20C4F /* Parse.framework */,
 				7B896E0E18AF5FCD00831807 /* AudioToolbox.framework */,
 				7B896E0F18AF5FCD00831807 /* CFNetwork.framework */,
 				7B896E1018AF5FCD00831807 /* CoreLocation.framework */,
@@ -140,7 +147,6 @@
 				7B896E1418AF5FCD00831807 /* Security.framework */,
 				7B896E1518AF5FCD00831807 /* StoreKit.framework */,
 				7B896E1618AF5FCD00831807 /* SystemConfiguration.framework */,
-				7B896E0C18AF5EE000831807 /* Parse.framework */,
 				7B896DD318AF524E00831807 /* Foundation.framework */,
 				7B896DD518AF524E00831807 /* CoreGraphics.framework */,
 				7B896DD718AF524E00831807 /* UIKit.framework */,
@@ -156,6 +162,10 @@
 				7B896DE318AF524E00831807 /* BMAppDelegate.m */,
 				7B896E0918AF58EB00831807 /* BMInboxViewController.h */,
 				7B896E0A18AF58EB00831807 /* BMInboxViewController.m */,
+				7B87166B18B00E2D00E20C4F /* LogInViewController.h */,
+				7B87166C18B00E2D00E20C4F /* LogInViewController.m */,
+				7B87167118B00E9900E20C4F /* SignUpViewController.h */,
+				7B87167218B00E9900E20C4F /* SignUpViewController.m */,
 				7B896E0218AF527600831807 /* MainStoryboard.storyboard */,
 				7B896DE518AF524E00831807 /* Images.xcassets */,
 				7B896DDA18AF524E00831807 /* Supporting Files */,
@@ -289,6 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B87166D18B00E2D00E20C4F /* LogInViewController.m in Sources */,
+				7B87167318B00E9900E20C4F /* SignUpViewController.m in Sources */,
 				7B896E0B18AF58EB00831807 /* BMInboxViewController.m in Sources */,
 				7B896DE018AF524E00831807 /* main.m in Sources */,
 				7B896DE418AF524E00831807 /* BMAppDelegate.m in Sources */,
@@ -413,6 +425,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/CollinHartigan/Desktop/library/Boggie\\ Man",
+					/Users/CollinHartigan/Desktop/library/Cyclopse,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Boggie Man/Boggie Man-Prefix.pch";
@@ -430,6 +443,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/CollinHartigan/Desktop/library/Boggie\\ Man",
+					/Users/CollinHartigan/Desktop/library/Cyclopse,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Boggie Man/Boggie Man-Prefix.pch";
