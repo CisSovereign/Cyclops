@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B82E11F18B087A000695237 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E11E18B087A000695237 /* EditFriendsViewController.m */; };
+		7B82E12218B093D000695237 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E12118B093D000695237 /* FriendsViewController.m */; };
+		7B82E12518B0AA9900695237 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E12418B0AA9900695237 /* CameraViewController.m */; };
 		7B87166A18B00D9300E20C4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B87166918B00D9300E20C4F /* Parse.framework */; };
 		7B87166D18B00E2D00E20C4F /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87166C18B00E2D00E20C4F /* LogInViewController.m */; };
 		7B87167318B00E9900E20C4F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87167218B00E9900E20C4F /* SignUpViewController.m */; };
@@ -46,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B82E11D18B087A000695237 /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
+		7B82E11E18B087A000695237 /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
+		7B82E12018B093D000695237 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		7B82E12118B093D000695237 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		7B82E12318B0AA9900695237 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		7B82E12418B0AA9900695237 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		7B87166918B00D9300E20C4F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7B87166B18B00E2D00E20C4F /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		7B87166C18B00E2D00E20C4F /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
@@ -166,6 +175,12 @@
 				7B87166C18B00E2D00E20C4F /* LogInViewController.m */,
 				7B87167118B00E9900E20C4F /* SignUpViewController.h */,
 				7B87167218B00E9900E20C4F /* SignUpViewController.m */,
+				7B82E11D18B087A000695237 /* EditFriendsViewController.h */,
+				7B82E11E18B087A000695237 /* EditFriendsViewController.m */,
+				7B82E12018B093D000695237 /* FriendsViewController.h */,
+				7B82E12118B093D000695237 /* FriendsViewController.m */,
+				7B82E12318B0AA9900695237 /* CameraViewController.h */,
+				7B82E12418B0AA9900695237 /* CameraViewController.m */,
 				7B896E0218AF527600831807 /* MainStoryboard.storyboard */,
 				7B896DE518AF524E00831807 /* Images.xcassets */,
 				7B896DDA18AF524E00831807 /* Supporting Files */,
@@ -300,9 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B87166D18B00E2D00E20C4F /* LogInViewController.m in Sources */,
+				7B82E12518B0AA9900695237 /* CameraViewController.m in Sources */,
 				7B87167318B00E9900E20C4F /* SignUpViewController.m in Sources */,
+				7B82E12218B093D000695237 /* FriendsViewController.m in Sources */,
 				7B896E0B18AF58EB00831807 /* BMInboxViewController.m in Sources */,
 				7B896DE018AF524E00831807 /* main.m in Sources */,
+				7B82E11F18B087A000695237 /* EditFriendsViewController.m in Sources */,
 				7B896DE418AF524E00831807 /* BMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
