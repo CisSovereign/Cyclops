@@ -15,11 +15,16 @@
 
 @implementation FriendsViewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     PFQuery *query = [self.friendsRelation query];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -34,7 +39,7 @@
     
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showEditFriends"]) {
         EditFriendsViewController *viewController = (EditFriendsViewController *)segue.destinationViewController;
         viewController.friends = [NSMutableArray arrayWithArray:self.friends];
@@ -51,7 +56,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
     return [self.friends count];
 }
