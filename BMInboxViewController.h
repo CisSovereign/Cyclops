@@ -6,10 +6,12 @@
 //  Copyright (c) 2014 Collin Hartigan. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import <UIKit/UIKit.h>
 
 @interface BMInboxViewController : UITableViewController
 @property(nonatomic, strong) NSArray *messages;
+@property(nonatomic, strong) PFObject *selectedMessage;
 - (IBAction)logout:(id)sender;
 
 @end

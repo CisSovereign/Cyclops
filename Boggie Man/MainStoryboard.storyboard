@@ -192,6 +192,34 @@
             </objects>
             <point key="canvasLocation" x="921" y="993"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Oyp-TL-Ecm">
+            <objects>
+                <viewController id="bHA-6c-GES" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ukV-aW-ooz"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdx-BR-VER"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xLu-ll-tBk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOa-qL-z1X">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KZo-qG-W1G"/>
+                    <connections>
+                        <outlet property="imageView" destination="QOa-qL-z1X" id="tvV-bJ-Rib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYT-5t-di3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="-1093"/>
+        </scene>
         <!--Inbox View Controller - Title-->
         <scene sceneID="ctm-M0-R4e">
             <objects>
@@ -224,11 +252,12 @@
                     </navigationItem>
                     <connections>
                         <segue destination="UpO-pC-Um0" kind="push" identifier="showLogin" id="e2y-Vj-l53"/>
+                        <segue destination="bHA-6c-GES" kind="push" identifier="showImage" id="Ujj-AA-pXw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3h-SM-ImQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921" y="-408"/>
+            <point key="canvasLocation" x="889" y="-408"/>
         </scene>
         <!--Sign Up View Controller - Title-->
         <scene sceneID="RwH-uv-Db5">
