@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B04585D18BB3A400022AD0F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B04585C18BB3A400022AD0F /* ImageViewController.m */; };
 		7B1FDDB618CBAC4D00AD9BD6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1FDDB518CBAC4D00AD9BD6 /* MediaPlayer.framework */; };
+		7B29669218CBED7D00440E44 /* BMInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B29669118CBED7D00440E44 /* BMInboxViewController.m */; };
 		7B82E11F18B087A000695237 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E11E18B087A000695237 /* EditFriendsViewController.m */; };
 		7B82E12218B093D000695237 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E12118B093D000695237 /* FriendsViewController.m */; };
 		7B82E12518B0AA9900695237 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E12418B0AA9900695237 /* CameraViewController.m */; };
@@ -28,7 +29,6 @@
 		7B896DF718AF524E00831807 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B896DF518AF524E00831807 /* InfoPlist.strings */; };
 		7B896DF918AF524E00831807 /* Boggie_ManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B896DF818AF524E00831807 /* Boggie_ManTests.m */; };
 		7B896E0318AF527600831807 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B896E0218AF527600831807 /* MainStoryboard.storyboard */; };
-		7B896E0B18AF58EB00831807 /* BMInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B896E0A18AF58EB00831807 /* BMInboxViewController.m */; };
 		7B896E1718AF5FCD00831807 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E0E18AF5FCD00831807 /* AudioToolbox.framework */; };
 		7B896E1818AF5FCD00831807 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E0F18AF5FCD00831807 /* CFNetwork.framework */; };
 		7B896E1918AF5FCD00831807 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E1018AF5FCD00831807 /* CoreLocation.framework */; };
@@ -54,6 +54,8 @@
 		7B04585B18BB3A400022AD0F /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		7B04585C18BB3A400022AD0F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		7B1FDDB518CBAC4D00AD9BD6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7B29669018CBED7D00440E44 /* BMInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInboxViewController.h; sourceTree = "<group>"; };
+		7B29669118CBED7D00440E44 /* BMInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInboxViewController.m; sourceTree = "<group>"; };
 		7B82E11D18B087A000695237 /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
 		7B82E11E18B087A000695237 /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
 		7B82E12018B093D000695237 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
@@ -82,8 +84,6 @@
 		7B896DF618AF524E00831807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B896DF818AF524E00831807 /* Boggie_ManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boggie_ManTests.m; sourceTree = "<group>"; };
 		7B896E0218AF527600831807 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		7B896E0918AF58EB00831807 /* BMInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMInboxViewController.h; path = ../BMInboxViewController.h; sourceTree = "<group>"; };
-		7B896E0A18AF58EB00831807 /* BMInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMInboxViewController.m; path = ../BMInboxViewController.m; sourceTree = "<group>"; };
 		7B896E0E18AF5FCD00831807 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7B896E0F18AF5FCD00831807 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7B896E1018AF5FCD00831807 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -176,8 +176,8 @@
 			children = (
 				7B896DE218AF524E00831807 /* BMAppDelegate.h */,
 				7B896DE318AF524E00831807 /* BMAppDelegate.m */,
-				7B896E0918AF58EB00831807 /* BMInboxViewController.h */,
-				7B896E0A18AF58EB00831807 /* BMInboxViewController.m */,
+				7B29669018CBED7D00440E44 /* BMInboxViewController.h */,
+				7B29669118CBED7D00440E44 /* BMInboxViewController.m */,
 				7B87166B18B00E2D00E20C4F /* LogInViewController.h */,
 				7B87166C18B00E2D00E20C4F /* LogInViewController.m */,
 				7B87167118B00E9900E20C4F /* SignUpViewController.h */,
@@ -323,11 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B29669218CBED7D00440E44 /* BMInboxViewController.m in Sources */,
 				7B87166D18B00E2D00E20C4F /* LogInViewController.m in Sources */,
 				7B82E12518B0AA9900695237 /* CameraViewController.m in Sources */,
 				7B87167318B00E9900E20C4F /* SignUpViewController.m in Sources */,
 				7B82E12218B093D000695237 /* FriendsViewController.m in Sources */,
-				7B896E0B18AF58EB00831807 /* BMInboxViewController.m in Sources */,
 				7B896DE018AF524E00831807 /* main.m in Sources */,
 				7B04585D18BB3A400022AD0F /* ImageViewController.m in Sources */,
 				7B82E11F18B087A000695237 /* EditFriendsViewController.m in Sources */,
