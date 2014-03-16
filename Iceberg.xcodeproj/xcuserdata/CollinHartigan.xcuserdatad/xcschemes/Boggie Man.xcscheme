@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7B896DCF18AF524E00831807"
                BuildableName = "Boggie Man.app"
-               BlueprintName = "Boggie Man"
-               ReferencedContainer = "container:Boggie Man.xcodeproj">
+               BlueprintName = "Iceberg"
+               ReferencedContainer = "container:Iceberg.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7B896DEA18AF524E00831807"
                BuildableName = "Boggie ManTests.xctest"
-               BlueprintName = "Boggie ManTests"
-               ReferencedContainer = "container:Boggie Man.xcodeproj">
+               BlueprintName = "IcebergTests"
+               ReferencedContainer = "container:Iceberg.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B896DCF18AF524E00831807"
             BuildableName = "Boggie Man.app"
-            BlueprintName = "Boggie Man"
-            ReferencedContainer = "container:Boggie Man.xcodeproj">
+            BlueprintName = "Iceberg"
+            ReferencedContainer = "container:Iceberg.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B896DCF18AF524E00831807"
             BuildableName = "Boggie Man.app"
-            BlueprintName = "Boggie Man"
-            ReferencedContainer = "container:Boggie Man.xcodeproj">
+            BlueprintName = "Iceberg"
+            ReferencedContainer = "container:Iceberg.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B896DCF18AF524E00831807"
             BuildableName = "Boggie Man.app"
-            BlueprintName = "Boggie Man"
-            ReferencedContainer = "container:Boggie Man.xcodeproj">
+            BlueprintName = "Iceberg"
+            ReferencedContainer = "container:Iceberg.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

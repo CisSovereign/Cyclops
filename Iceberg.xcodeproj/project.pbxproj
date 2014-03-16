@@ -67,20 +67,20 @@
 		7B87166C18B00E2D00E20C4F /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		7B87167118B00E9900E20C4F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		7B87167218B00E9900E20C4F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		7B896DD018AF524E00831807 /* Boggie Man.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boggie Man.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B896DD018AF524E00831807 /* Iceberg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iceberg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B896DD318AF524E00831807 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B896DD518AF524E00831807 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7B896DD718AF524E00831807 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7B896DDB18AF524E00831807 /* Boggie Man-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Boggie Man-Info.plist"; sourceTree = "<group>"; };
+		7B896DDB18AF524E00831807 /* Iceberg-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Iceberg-Info.plist"; sourceTree = "<group>"; };
 		7B896DDD18AF524E00831807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B896DDF18AF524E00831807 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7B896DE118AF524E00831807 /* Boggie Man-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Boggie Man-Prefix.pch"; sourceTree = "<group>"; };
+		7B896DE118AF524E00831807 /* Iceberg-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Iceberg-Prefix.pch"; sourceTree = "<group>"; };
 		7B896DE218AF524E00831807 /* BMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMAppDelegate.h; sourceTree = "<group>"; };
 		7B896DE318AF524E00831807 /* BMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMAppDelegate.m; sourceTree = "<group>"; };
 		7B896DE518AF524E00831807 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7B896DEB18AF524E00831807 /* Boggie ManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boggie ManTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B896DEB18AF524E00831807 /* IcebergTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcebergTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B896DEC18AF524E00831807 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7B896DF418AF524E00831807 /* Boggie ManTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Boggie ManTests-Info.plist"; sourceTree = "<group>"; };
+		7B896DF418AF524E00831807 /* IcebergTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IcebergTests-Info.plist"; sourceTree = "<group>"; };
 		7B896DF618AF524E00831807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B896DF818AF524E00831807 /* Boggie_ManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boggie_ManTests.m; sourceTree = "<group>"; };
 		7B896E0218AF527600831807 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		7B896DD118AF524E00831807 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B896DD018AF524E00831807 /* Boggie Man.app */,
-				7B896DEB18AF524E00831807 /* Boggie ManTests.xctest */,
+				7B896DD018AF524E00831807 /* Iceberg.app */,
+				7B896DEB18AF524E00831807 /* IcebergTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,10 +200,10 @@
 		7B896DDA18AF524E00831807 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B896DDB18AF524E00831807 /* Boggie Man-Info.plist */,
+				7B896DDB18AF524E00831807 /* Iceberg-Info.plist */,
 				7B896DDC18AF524E00831807 /* InfoPlist.strings */,
 				7B896DDF18AF524E00831807 /* main.m */,
-				7B896DE118AF524E00831807 /* Boggie Man-Prefix.pch */,
+				7B896DE118AF524E00831807 /* Iceberg-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 		7B896DF318AF524E00831807 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B896DF418AF524E00831807 /* Boggie ManTests-Info.plist */,
+				7B896DF418AF524E00831807 /* IcebergTests-Info.plist */,
 				7B896DF518AF524E00831807 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -229,9 +229,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B896DCF18AF524E00831807 /* Boggie Man */ = {
+		7B896DCF18AF524E00831807 /* Iceberg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B896DFC18AF524E00831807 /* Build configuration list for PBXNativeTarget "Boggie Man" */;
+			buildConfigurationList = 7B896DFC18AF524E00831807 /* Build configuration list for PBXNativeTarget "Iceberg" */;
 			buildPhases = (
 				7B896DCC18AF524E00831807 /* Sources */,
 				7B896DCD18AF524E00831807 /* Frameworks */,
@@ -241,14 +241,14 @@
 			);
 			dependencies = (
 			);
-			name = "Boggie Man";
+			name = Iceberg;
 			productName = "Boggie Man";
-			productReference = 7B896DD018AF524E00831807 /* Boggie Man.app */;
+			productReference = 7B896DD018AF524E00831807 /* Iceberg.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B896DEA18AF524E00831807 /* Boggie ManTests */ = {
+		7B896DEA18AF524E00831807 /* IcebergTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B896DFF18AF524E00831807 /* Build configuration list for PBXNativeTarget "Boggie ManTests" */;
+			buildConfigurationList = 7B896DFF18AF524E00831807 /* Build configuration list for PBXNativeTarget "IcebergTests" */;
 			buildPhases = (
 				7B896DE718AF524E00831807 /* Sources */,
 				7B896DE818AF524E00831807 /* Frameworks */,
@@ -259,9 +259,9 @@
 			dependencies = (
 				7B896DF118AF524E00831807 /* PBXTargetDependency */,
 			);
-			name = "Boggie ManTests";
+			name = IcebergTests;
 			productName = "Boggie ManTests";
-			productReference = 7B896DEB18AF524E00831807 /* Boggie ManTests.xctest */;
+			productReference = 7B896DEB18AF524E00831807 /* IcebergTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B896DCB18AF524E00831807 /* Build configuration list for PBXProject "Boggie Man" */;
+			buildConfigurationList = 7B896DCB18AF524E00831807 /* Build configuration list for PBXProject "Iceberg" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -291,8 +291,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B896DCF18AF524E00831807 /* Boggie Man */,
-				7B896DEA18AF524E00831807 /* Boggie ManTests */,
+				7B896DCF18AF524E00831807 /* Iceberg */,
+				7B896DEA18AF524E00831807 /* IcebergTests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +348,7 @@
 /* Begin PBXTargetDependency section */
 		7B896DF118AF524E00831807 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B896DCF18AF524E00831807 /* Boggie Man */;
+			target = 7B896DCF18AF524E00831807 /* Iceberg */;
 			targetProxy = 7B896DF018AF524E00831807 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -454,9 +454,9 @@
 					/Users/CollinHartigan/Desktop/library/Cyclopse,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Boggie Man/Boggie Man-Prefix.pch";
-				INFOPLIST_FILE = "Boggie Man/Boggie Man-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Boggie Man/Iceberg-Prefix.pch";
+				INFOPLIST_FILE = "Boggie Man/Iceberg-Info.plist";
+				PRODUCT_NAME = Iceberg;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -472,9 +472,9 @@
 					/Users/CollinHartigan/Desktop/library/Cyclopse,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Boggie Man/Boggie Man-Prefix.pch";
-				INFOPLIST_FILE = "Boggie Man/Boggie Man-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Boggie Man/Iceberg-Prefix.pch";
+				INFOPLIST_FILE = "Boggie Man/Iceberg-Info.plist";
+				PRODUCT_NAME = Iceberg;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -494,8 +494,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Boggie ManTests/Boggie ManTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Boggie ManTests/IcebergTests-Info.plist";
+				PRODUCT_NAME = IcebergTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -512,8 +512,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Boggie Man/Boggie Man-Prefix.pch";
-				INFOPLIST_FILE = "Boggie ManTests/Boggie ManTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Boggie ManTests/IcebergTests-Info.plist";
+				PRODUCT_NAME = IcebergTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -522,7 +522,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B896DCB18AF524E00831807 /* Build configuration list for PBXProject "Boggie Man" */ = {
+		7B896DCB18AF524E00831807 /* Build configuration list for PBXProject "Iceberg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B896DFA18AF524E00831807 /* Debug */,
@@ -531,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B896DFC18AF524E00831807 /* Build configuration list for PBXNativeTarget "Boggie Man" */ = {
+		7B896DFC18AF524E00831807 /* Build configuration list for PBXNativeTarget "Iceberg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B896DFD18AF524E00831807 /* Debug */,
@@ -540,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B896DFF18AF524E00831807 /* Build configuration list for PBXNativeTarget "Boggie ManTests" */ = {
+		7B896DFF18AF524E00831807 /* Build configuration list for PBXNativeTarget "IcebergTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B896E0018AF524E00831807 /* Debug */,
