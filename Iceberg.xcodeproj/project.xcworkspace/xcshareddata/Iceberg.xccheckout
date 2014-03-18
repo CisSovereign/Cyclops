@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>48A6E182-AFB6-43F9-9CCC-ED9BE8D96F0A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Iceberg</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>87665222-09DF-4029-8803-9965B429F51B</key>
+		<string>ssh://github.com/CisSovereign/Cyclops.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Iceberg.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>87665222-09DF-4029-8803-9965B429F51B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/CisSovereign/Cyclops.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>87665222-09DF-4029-8803-9965B429F51B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>87665222-09DF-4029-8803-9965B429F51B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cyclopse</string>
+		</dict>
+	</array>
+</dict>
+</plist>

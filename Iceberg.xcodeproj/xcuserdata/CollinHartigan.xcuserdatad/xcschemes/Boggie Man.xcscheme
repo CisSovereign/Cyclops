@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7B896DCF18AF524E00831807"
-               BuildableName = "Boggie Man.app"
+               BuildableName = "Iceberg.app"
                BlueprintName = "Iceberg"
                ReferencedContainer = "container:Iceberg.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7B896DEA18AF524E00831807"
-               BuildableName = "Boggie ManTests.xctest"
+               BuildableName = "IcebergTests.xctest"
                BlueprintName = "IcebergTests"
                ReferencedContainer = "container:Iceberg.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B896DCF18AF524E00831807"
-            BuildableName = "Boggie Man.app"
+            BuildableName = "Iceberg.app"
             BlueprintName = "Iceberg"
             ReferencedContainer = "container:Iceberg.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B896DCF18AF524E00831807"
-            BuildableName = "Boggie Man.app"
+            BuildableName = "Iceberg.app"
             BlueprintName = "Iceberg"
             ReferencedContainer = "container:Iceberg.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B896DCF18AF524E00831807"
-            BuildableName = "Boggie Man.app"
+            BuildableName = "Iceberg.app"
             BlueprintName = "Iceberg"
             ReferencedContainer = "container:Iceberg.xcodeproj">
          </BuildableReference>

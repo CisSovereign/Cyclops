@@ -16,21 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgroundimage" translatesAutoresizingMaskIntoConstraints="NO" id="aB5-h2-KuN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backgroundimage" translatesAutoresizingMaskIntoConstraints="NO" id="aB5-h2-KuN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eVY-Dm-1ag">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVY-Dm-1ag" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-kC-tOD">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-kC-tOD">
                                         <rect key="frame" x="20" y="209" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-f0-Hsh">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-f0-Hsh">
                                         <rect key="frame" x="20" y="244" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -48,7 +48,7 @@
                                             <action selector="login:" destination="UpO-pC-Um0" eventType="touchUpInside" id="rYp-SU-u2j"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ai-Ar-E1Q">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ai-Ar-E1Q">
                                         <rect key="frame" x="232" y="525" width="55" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Sign Up">
@@ -58,7 +58,7 @@
                                             <segue destination="Z6N-oq-bey" kind="push" id="tdS-vm-cCi"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USn-VN-KWg">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USn-VN-KWg">
                                         <rect key="frame" x="43" y="529" width="183" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -67,12 +67,26 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="5Ai-Ar-E1Q" firstAttribute="leading" secondItem="USn-VN-KWg" secondAttribute="trailing" constant="6" id="3ih-Kf-jQ6"/>
                                     <constraint firstAttribute="bottom" secondItem="USn-VN-KWg" secondAttribute="bottom" constant="18" id="8LA-Qi-j7x"/>
                                     <constraint firstAttribute="bottom" secondItem="5Ai-Ar-E1Q" secondAttribute="bottom" constant="13" id="btg-pW-IZL"/>
+                                    <constraint firstItem="USn-VN-KWg" firstAttribute="leading" secondItem="eVY-Dm-1ag" secondAttribute="leading" constant="43" id="eRi-ql-uLB"/>
+                                    <constraint firstAttribute="trailing" secondItem="USn-VN-KWg" secondAttribute="trailing" constant="94" id="fD4-ba-nol"/>
+                                    <constraint firstItem="USn-VN-KWg" firstAttribute="top" secondItem="eVY-Dm-1ag" secondAttribute="top" constant="529" id="wCF-FY-H0r"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eVY-Dm-1ag" firstAttribute="trailing" secondItem="aB5-h2-KuN" secondAttribute="trailing" id="DYN-wm-gp7"/>
+                            <constraint firstItem="eVY-Dm-1ag" firstAttribute="leading" secondItem="m2c-Ev-c6H" secondAttribute="leading" id="Eca-eB-rp4"/>
+                            <constraint firstAttribute="trailing" secondItem="eVY-Dm-1ag" secondAttribute="trailing" id="Gtr-EK-JeG"/>
+                            <constraint firstItem="eVY-Dm-1ag" firstAttribute="top" secondItem="m2c-Ev-c6H" secondAttribute="top" id="Q3w-DJ-Idm"/>
+                            <constraint firstAttribute="bottom" secondItem="eVY-Dm-1ag" secondAttribute="bottom" id="gRk-6g-qPc"/>
+                            <constraint firstItem="eVY-Dm-1ag" firstAttribute="top" secondItem="aB5-h2-KuN" secondAttribute="top" id="ofJ-hJ-Gfj"/>
+                            <constraint firstItem="eVY-Dm-1ag" firstAttribute="bottom" secondItem="aB5-h2-KuN" secondAttribute="bottom" id="tYB-Ds-fCE"/>
+                            <constraint firstItem="eVY-Dm-1ag" firstAttribute="leading" secondItem="aB5-h2-KuN" secondAttribute="leading" id="wjd-gw-5me"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="F7u-tH-s1J"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -294,17 +308,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-2r-z8K">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-2r-z8K" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUK-Zw-5qF">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUK-Zw-5qF">
                                         <rect key="frame" x="20" y="250" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-13-mtY">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-13-mtY">
                                         <rect key="frame" x="20" y="289" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -320,7 +334,7 @@
                                             <action selector="signup:" destination="Z6N-oq-bey" eventType="touchUpInside" id="Lih-Pr-cb7"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7g-JJ-1eT">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7g-JJ-1eT">
                                         <rect key="frame" x="20" y="209" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
