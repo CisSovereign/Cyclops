@@ -10,9 +10,12 @@
 #import "ImageViewController.h"
 
 
-@interface BMInboxViewController ()
+@interface BMInboxViewController () {
+    UIRefreshControl *refreshControl;
+}
 
 @end
+
 
 @implementation BMInboxViewController
 
@@ -31,7 +34,21 @@
         [self performSegueWithIdentifier:@"showLogin" sender:self];
     }
     
-   }
+    refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refreshTableView) forControlEvents:UIControlEventValueChanged];
+    
+    [self.tableView addSubview:refreshControl];
+    
+    
+}
+
+- (void)refreshTableView
+{
+   
+    [self.tableView reloadData];
+    [refreshControl endRefreshing];
+
+}
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
