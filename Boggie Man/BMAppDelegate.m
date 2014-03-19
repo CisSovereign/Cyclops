@@ -53,11 +53,17 @@
 -(void)customizeUserInterface {
     //Customized navbar
     //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.502 green:0.627 blue:0.737 alpha:1.0]];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"name"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
     
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //Customize Tab bar colors
+    [[UITabBarItem appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    
+    
+    
 }
 
 
