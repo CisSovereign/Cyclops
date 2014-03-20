@@ -24,6 +24,10 @@
 {
     [super viewDidLoad];
     
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+    [self.tableView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"viewBackground.png"]]];
+    
     self.moviePlayer = [[MPMoviePlayerController alloc] init];
     
     PFUser *currentUser = [PFUser currentUser];
@@ -35,25 +39,41 @@
     }
     
     refreshControl = [[UIRefreshControl alloc] init];
-    [refreshControl addTarget:self action:@selector(refreshTableView) forControlEvents:UIControlEventValueChanged];
+    [refreshControl addTarget:self action:@selector(queryData) forControlEvents:UIControlEventValueChanged];
     
     [self.tableView addSubview:refreshControl];
     
+    [self queryData];
+    
+    
+    
     
 }
 
-- (void)refreshTableView
-{
-   
-    [self.tableView reloadData];
-    [refreshControl endRefreshing];
+-(void)queryData {
+    PFQuery *query= [PFQuery queryWithClassName:@"Messages"];
+    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            NSLog(@"Error %@ %@", error, [error userInfo]);
+        }
+        else {
+            self.messages = objects;
+            [self.tableView reloadData];
+             [refreshControl endRefreshing];
+            
+        }
+    }];
 
 }
+
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [self.navigationController.navigationBar setHidden:NO];
+
     
     PFQuery *query= [PFQuery queryWithClassName:@"Messages"];
     [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
@@ -109,7 +129,9 @@
     }
     
     return cell;
+    
 }
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
