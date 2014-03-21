@@ -15,6 +15,7 @@
 @property(nonatomic, strong) PFObject *selectedMessage;
 @property(nonatomic, strong) MPMoviePlayerController *moviePlayer;
 
+
 - (IBAction)logout:(id)sender;
 
 

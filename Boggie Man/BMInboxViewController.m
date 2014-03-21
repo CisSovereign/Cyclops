@@ -8,7 +8,7 @@
 
 #import "BMInboxViewController.h"
 #import "ImageViewController.h"
-
+#import "MSCellAccessory.h"
 
 @interface BMInboxViewController () {
     UIRefreshControl *refreshControl;
@@ -33,6 +33,7 @@
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         NSLog(@"Current user %@", currentUser.username);
+         [self queryData];
     }
     else {
         [self performSegueWithIdentifier:@"showLogin" sender:self];
@@ -43,7 +44,6 @@
     
     [self.tableView addSubview:refreshControl];
     
-    [self queryData];
     
     
     
@@ -119,6 +119,9 @@
     
     PFObject *message = [self.messages objectAtIndex:indexPath.row];
     cell.textLabel.text = [message objectForKey:@"senderName"];
+    
+    UIColor *disclosureColor = [UIColor colorWithRed:0.502 green:0.627 blue:0.737 alpha:1.0];
+    cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_DISCLOSURE_INDICATOR color:disclosureColor];
     
     NSString *fileType = [message objectForKey:@"fileType"];
     if ([fileType isEqualToString:@"image"]) {

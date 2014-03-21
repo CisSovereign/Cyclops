@@ -38,6 +38,9 @@
 		7B896E1D18AF5FCD00831807 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E1418AF5FCD00831807 /* Security.framework */; };
 		7B896E1E18AF5FCD00831807 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E1518AF5FCD00831807 /* StoreKit.framework */; };
 		7B896E1F18AF5FCD00831807 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B896E1618AF5FCD00831807 /* SystemConfiguration.framework */; };
+		7B9ABDAF18DC206900EF25FA /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ABDAC18DC206900EF25FA /* MSCellAccessory.m */; };
+		7B9ABDB018DC206900EF25FA /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ABDAE18DC206900EF25FA /* UIView+AccessViewController.m */; };
+		7B9ABDB318DC29CC00EF25FA /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ABDB118DC29CC00EF25FA /* GravatarUrlBuilder.m */; };
 		7BA1B99B18D82DF500F7C161 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1B99A18D82DF500F7C161 /* TPKeyboardAvoidingScrollView.m */; };
 		7BA1B99E18D82E0B00F7C161 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1B99D18D82E0B00F7C161 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 /* End PBXBuildFile section */
@@ -95,6 +98,12 @@
 		7B896E1418AF5FCD00831807 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7B896E1518AF5FCD00831807 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7B896E1618AF5FCD00831807 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7B9ABDAB18DC206900EF25FA /* MSCellAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCellAccessory.h; sourceTree = "<group>"; };
+		7B9ABDAC18DC206900EF25FA /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
+		7B9ABDAD18DC206900EF25FA /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
+		7B9ABDAE18DC206900EF25FA /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
+		7B9ABDB118DC29CC00EF25FA /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarUrlBuilder.m; sourceTree = "<group>"; };
+		7B9ABDB218DC29CC00EF25FA /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravatarUrlBuilder.h; sourceTree = "<group>"; };
 		7BA1B99918D82DF500F7C161 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		7BA1B99A18D82DF500F7C161 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		7BA1B99C18D82E0B00F7C161 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
@@ -180,6 +189,9 @@
 		7B896DD918AF524E00831807 /* Boggie Man */ = {
 			isa = PBXGroup;
 			children = (
+				7B9ABDB118DC29CC00EF25FA /* GravatarUrlBuilder.m */,
+				7B9ABDB218DC29CC00EF25FA /* GravatarUrlBuilder.h */,
+				7B9ABDAA18DC206900EF25FA /* MSCellAccessory */,
 				7BA1B99C18D82E0B00F7C161 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				7BA1B99D18D82E0B00F7C161 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 				7BA1B99918D82DF500F7C161 /* TPKeyboardAvoidingScrollView.h */,
@@ -234,6 +246,17 @@
 				7B896DF518AF524E00831807 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B9ABDAA18DC206900EF25FA /* MSCellAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				7B9ABDAB18DC206900EF25FA /* MSCellAccessory.h */,
+				7B9ABDAC18DC206900EF25FA /* MSCellAccessory.m */,
+				7B9ABDAD18DC206900EF25FA /* UIView+AccessViewController.h */,
+				7B9ABDAE18DC206900EF25FA /* UIView+AccessViewController.m */,
+			);
+			path = MSCellAccessory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +357,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B29669218CBED7D00440E44 /* BMInboxViewController.m in Sources */,
+				7B9ABDB318DC29CC00EF25FA /* GravatarUrlBuilder.m in Sources */,
 				7BA1B99B18D82DF500F7C161 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				7B9ABDB018DC206900EF25FA /* UIView+AccessViewController.m in Sources */,
 				7B87166D18B00E2D00E20C4F /* LogInViewController.m in Sources */,
 				7B82E12518B0AA9900695237 /* CameraViewController.m in Sources */,
+				7B9ABDAF18DC206900EF25FA /* MSCellAccessory.m in Sources */,
 				7B87167318B00E9900E20C4F /* SignUpViewController.m in Sources */,
 				7BA1B99E18D82E0B00F7C161 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				7B82E12218B093D000695237 /* FriendsViewController.m in Sources */,
