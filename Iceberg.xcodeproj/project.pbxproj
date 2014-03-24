@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7B04585D18BB3A400022AD0F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B04585C18BB3A400022AD0F /* ImageViewController.m */; };
 		7B1FDDB618CBAC4D00AD9BD6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1FDDB518CBAC4D00AD9BD6 /* MediaPlayer.framework */; };
+		7B23497F18E00E9B006F183D /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B23497C18E00E9B006F183D /* FBShimmeringLayer.m */; };
+		7B23498018E00E9B006F183D /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B23497E18E00E9B006F183D /* FBShimmeringView.m */; };
 		7B29669218CBED7D00440E44 /* BMInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B29669118CBED7D00440E44 /* BMInboxViewController.m */; };
 		7B82E11F18B087A000695237 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E11E18B087A000695237 /* EditFriendsViewController.m */; };
 		7B82E12218B093D000695237 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82E12118B093D000695237 /* FriendsViewController.m */; };
@@ -59,6 +61,12 @@
 		7B04585B18BB3A400022AD0F /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		7B04585C18BB3A400022AD0F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		7B1FDDB518CBAC4D00AD9BD6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7B23497918E00E9B006F183D /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		7B23497A18E00E9B006F183D /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		7B23497B18E00E9B006F183D /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		7B23497C18E00E9B006F183D /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		7B23497D18E00E9B006F183D /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		7B23497E18E00E9B006F183D /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
 		7B29669018CBED7D00440E44 /* BMInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInboxViewController.h; sourceTree = "<group>"; };
 		7B29669118CBED7D00440E44 /* BMInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInboxViewController.m; sourceTree = "<group>"; };
 		7B82E11D18B087A000695237 /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
@@ -189,6 +197,12 @@
 		7B896DD918AF524E00831807 /* Boggie Man */ = {
 			isa = PBXGroup;
 			children = (
+				7B23497918E00E9B006F183D /* FBShimmering-Prefix.pch */,
+				7B23497A18E00E9B006F183D /* FBShimmering.h */,
+				7B23497B18E00E9B006F183D /* FBShimmeringLayer.h */,
+				7B23497C18E00E9B006F183D /* FBShimmeringLayer.m */,
+				7B23497D18E00E9B006F183D /* FBShimmeringView.h */,
+				7B23497E18E00E9B006F183D /* FBShimmeringView.m */,
 				7B9ABDB118DC29CC00EF25FA /* GravatarUrlBuilder.m */,
 				7B9ABDB218DC29CC00EF25FA /* GravatarUrlBuilder.h */,
 				7B9ABDAA18DC206900EF25FA /* MSCellAccessory */,
@@ -359,6 +373,7 @@
 				7B29669218CBED7D00440E44 /* BMInboxViewController.m in Sources */,
 				7B9ABDB318DC29CC00EF25FA /* GravatarUrlBuilder.m in Sources */,
 				7BA1B99B18D82DF500F7C161 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				7B23498018E00E9B006F183D /* FBShimmeringView.m in Sources */,
 				7B9ABDB018DC206900EF25FA /* UIView+AccessViewController.m in Sources */,
 				7B87166D18B00E2D00E20C4F /* LogInViewController.m in Sources */,
 				7B82E12518B0AA9900695237 /* CameraViewController.m in Sources */,
@@ -368,6 +383,7 @@
 				7B82E12218B093D000695237 /* FriendsViewController.m in Sources */,
 				7B896DE018AF524E00831807 /* main.m in Sources */,
 				7B04585D18BB3A400022AD0F /* ImageViewController.m in Sources */,
+				7B23497F18E00E9B006F183D /* FBShimmeringLayer.m in Sources */,
 				7B82E11F18B087A000695237 /* EditFriendsViewController.m in Sources */,
 				7B896DE418AF524E00831807 /* BMAppDelegate.m in Sources */,
 			);

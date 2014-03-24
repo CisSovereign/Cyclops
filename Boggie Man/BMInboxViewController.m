@@ -9,6 +9,7 @@
 #import "BMInboxViewController.h"
 #import "ImageViewController.h"
 #import "MSCellAccessory.h"
+#import "FBShimmeringView.h"
 
 @interface BMInboxViewController () {
     UIRefreshControl *refreshControl;
@@ -23,6 +24,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:shimmeringView];
+    
+    UILabel *loadingLabel = [[UILabel alloc] initWithFrame:shimmeringView.bounds];
+    loadingLabel.textAlignment = NSTextAlignmentCenter;
+    loadingLabel.text = NSLocalizedString(@"Icebergs", nil);
+    loadingLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:36];
+    shimmeringView.contentView = loadingLabel;
+    
+    shimmeringView.shimmering = YES;
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
